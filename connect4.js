@@ -1,10 +1,8 @@
 import * as t from "./connect4_module.js";
 const connect4 = new t.Connect4();
-var player = 1;
+var player = 1; //Player is red
 var state;
-
 var gameOver = false;
-
 var rows = 42;
 
 window.startGame = startGame; //if using js6 modules your html events attributes won't work. in that case you must bring your function from global scope to module scope. Just add this to your javascript file: window.functionName= functionName;
@@ -29,14 +27,13 @@ function setPiece() {
   if (gameOver) {
     return;
   }
-  let coords = this.id;
-  const squareId = parseInt(coords);
-
+  //let coords = this.id;
+  const squareId = parseInt(this.id);
   const validMoves = connect4.get_valid_moves(state);
   console.log(state);
   console.log(validMoves);
   console.log(validMoves[squareId]);
-  //get coords of that tile clicked
+
   if (validMoves[squareId]) {
     let tile = document.getElementById(squareId.toString());
     if (player == 1) {
@@ -63,7 +60,6 @@ function setPiece() {
     }
 
     player = connect4.get_opponent(player);
-    //checkWinner();
   }
 }
 
