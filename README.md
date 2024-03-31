@@ -17,3 +17,20 @@ https://github.com/cwd0075/tictactoe_gui
 To run:  
 just run index.html on a local web server  
 I run on VS Code Live Server locally (see Note: Setup javascript development environment on Windows)  
+
+### MCTS Folder:
+Connect 4, human play againts MCTS AI  
+MCTS Module code is from:  
+tictactoe_gui/mcts/mcts_module.js  
+
+Other modification:  
+connect4.js copy the changes in tictactoe_gui/mcts/script.js  
+connect4_module.js copy the changes in tictactoe_gui/mcts/tictactoe_module.js  
+
+### Connect 4 Alpha–beta pruning solver:  
+MCTS number of searches setting to 2500, still losing to the Alpha–beta pruning solver  
+https://connect4.gamesolver.org/  
+http://blog.gamesolver.org/  
+
+
+
