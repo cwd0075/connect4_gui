@@ -27,7 +27,7 @@ function setPiece() {
   if (gameOver) {
     return;
   }
-  //let coords = this.id;
+  //this = div element inside board
   const squareId = parseInt(this.id);
   const validMoves = connect4.get_valid_moves(state);
   console.log(state);
