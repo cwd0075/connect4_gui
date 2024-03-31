@@ -9,7 +9,8 @@ Check win logic is from youtube below:
 https://www.youtube.com/watch?v=aroYjgQH8Tw  
 https://github.com/kubowania/connect-four  
 
-While connect4_module.js is convert from tictactoe gui  
+connect4.js is convert from tictactoe_gui/script.js    
+connect4_module.js is convert from tictactoe_gui/tictactoe_module.js    
 https://github.com/cwd0075/tictactoe_gui  
 
 
