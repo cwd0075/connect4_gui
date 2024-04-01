@@ -43,7 +43,7 @@ export class Connect4 {
     }
 
     //[  [1, 1, 0],  [0, 1, 0],  [0, 1, 1]] >> [  1, 1, 0, 0, 1, 0, 0, 1, 1]
-    return output.flat().map((value) => (value === 1 ? 1 : 0));
+    return output.flat();
   }
   check_win(state, action) {
     if (action === null) {
@@ -123,11 +123,12 @@ export class Connect4 {
       [12, 19, 26, 33],
       [13, 20, 27, 34],
     ];
+    let stateflat = state.flat();
     for (let y = 0; y < winningArrays.length; y++) {
-      let square1 = state.flat()[winningArrays[y][0]];
-      let square2 = state.flat()[winningArrays[y][1]];
-      let square3 = state.flat()[winningArrays[y][2]];
-      let square4 = state.flat()[winningArrays[y][3]];
+      let square1 = stateflat[winningArrays[y][0]];
+      let square2 = stateflat[winningArrays[y][1]];
+      let square3 = stateflat[winningArrays[y][2]];
+      let square4 = stateflat[winningArrays[y][3]];
       if (
         square1 === player &&
         square2 === player &&
