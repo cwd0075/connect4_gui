@@ -3,7 +3,7 @@ import * as m from "./mcts_module.js";
 const connect4 = new t.Connect4();
 let args = {
   C: 1.41,
-  num_searches: 2000,
+  num_searches: 1000,
 };
 const mcts = new m.MCTS(connect4, args);
 var player = 1; //Player is red
@@ -81,6 +81,7 @@ function aiTurn() {
   let neutral_state = connect4.change_perspective(state, player);
   let mcts_probs = mcts.search(neutral_state);
   console.log(mcts_probs);
+  console.log(mcts.time, " ms");
   //action = np.argmax(mcts_probs)
   let action = mcts_probs.indexOf(Math.max(...mcts_probs));
   let tile = document.getElementById(action.toString());
