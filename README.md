@@ -1,4 +1,4 @@
-# connect4 gui my version 
+# connect4 gui my version, created by me without looking at the AlphaZero solution  
 connect 4 website  
 
 GUI based on the youtube below:    
@@ -26,6 +26,9 @@ tictactoe_gui/mcts/mcts_module.js
 Other modification:  
 connect4.js copy the changes in tictactoe_gui/mcts/script.js  
 connect4_module.js copy the changes in tictactoe_gui/mcts/tictactoe_module.js  
+
+### Demo:  
+https://cwd0075.github.io/connect4demo/  
 
 ### Connect 4 Alpha–beta pruning solver:  
 MCTS number of searches setting to 2500, still losing to the Alpha–beta pruning solver  
