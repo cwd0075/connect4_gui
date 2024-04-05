@@ -1,4 +1,4 @@
-# connect4_gui  
+# connect4 gui my version 
 connect 4 website  
 
 GUI based on the youtube below:    
